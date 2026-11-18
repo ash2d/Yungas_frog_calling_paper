@@ -1,0 +1,33 @@
+species,species_short,K,hypothesis,step,adds,d_coef,elpd_diff,se_diff,diff_over_se,delta_bic,verdict,supported
+Gastrotheca chrysosticta,G. chrysosticta,2,H0,model_1 − model_0,weather,2,382.68515168052187,24.950486542794206,15.337783133974307,-753.356922975353,model_1 better,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H1,model_2 − model_1,non-linear weather,2,105.10793911667763,13.481298676387302,7.796573730747155,-200.12506118424426,model_2 better,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H2,model_3 − model_2,weather interaction,1,1.8591228934760107,4.119362011959022,0.4513133072739771,3.287504123230974,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,2,H3,model_4_ord − model_3,heterospecific calling,1,-0.7405167371152999,0.7763388089008633,-0.9538576825287401,7.604582698179911,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,3,H0,model_1 − model_0,weather,2,386.3735113741533,24.887648816756656,15.524709233039767,-770.7730230230436,model_1 better,True
+Gastrotheca chrysosticta,G. chrysosticta,3,H1,model_2 − model_1,non-linear weather,2,108.62224296903702,13.760533167252955,7.893752491185014,-209.82091385012518,model_2 better,True
+Gastrotheca chrysosticta,G. chrysosticta,3,H2,model_3 − model_2,weather interaction,1,5.51760348565819,4.9852262949597055,1.1067909778211558,-5.529706628378335,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,3,H3,model_4_ord − model_3,heterospecific calling,1,-0.09271974772590497,1.149360910023893,-0.08067069874855715,5.1230109749321855,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,4,H0,model_1 − model_0,weather,2,395.9039897754276,24.842586592955964,15.936504368980842,-783.7459683219431,model_1 better,True
+Gastrotheca chrysosticta,G. chrysosticta,4,H1,model_2 − model_1,non-linear weather,2,113.2045629669794,13.818491219429244,8.192252046143079,-219.0704440105119,model_2 better,True
+Gastrotheca chrysosticta,G. chrysosticta,4,H2,model_3 − model_2,weather interaction,1,9.742004098887527,6.101097800486047,1.5967624872545765,-10.668164719697415,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,4,H3,model_4_ord − model_3,heterospecific calling,1,2.844217030813761,2.3588028000457184,1.205788390092904,1.405418791388911,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,5,H0,model_1 − model_0,weather,2,386.25086684271434,24.682056906536314,15.649055032379705,-758.8385534348236,model_1 better,True
+Gastrotheca chrysosticta,G. chrysosticta,5,H1,model_2 − model_1,non-linear weather,2,116.94870599351478,13.975088042505488,8.368369890609141,-222.32194838938722,model_2 better,True
+Gastrotheca chrysosticta,G. chrysosticta,5,H2,model_3 − model_2,weather interaction,1,9.424856206601305,6.261146969693862,1.5052922814655048,-10.555936489313353,indistinguishable,False
+Gastrotheca chrysosticta,G. chrysosticta,5,H3,model_4_ord − model_3,heterospecific calling,1,2.7463914879614073,2.630157406503595,1.0441928232775728,0.7711974572366671,indistinguishable,False
+Oreobates berdemenos,O. berdemenos,2,H0,model_1 − model_0,weather,2,64.69762676387921,10.347046135926753,6.252762954176626,-84.73879875791681,model_1 better,True
+Oreobates berdemenos,O. berdemenos,2,H1,model_2 − model_1,non-linear weather,2,11.814302936609874,4.805272257873857,2.4586126035316958,-13.009328780640317,model_2 better,True
+Oreobates berdemenos,O. berdemenos,2,H2,model_3 − model_2,weather interaction,1,17.564338065484563,6.059817563505623,2.89849288058823,-28.418202612496316,model_3 better,True
+Oreobates berdemenos,O. berdemenos,2,H3,model_4_ord − model_3,heterospecific calling,1,0.8896599228606608,2.3250884709444013,0.38263486915803246,9.117686449101711,indistinguishable,False
+Oreobates berdemenos,O. berdemenos,3,H0,model_1 − model_0,weather,2,56.351866158774065,9.652502170191724,5.83805785952543,-83.87285764212993,model_1 better,True
+Oreobates berdemenos,O. berdemenos,3,H1,model_2 − model_1,non-linear weather,2,13.386076160514284,5.169908855603814,2.5892286565177502,-12.022547984101948,model_2 better,True
+Oreobates berdemenos,O. berdemenos,3,H2,model_3 − model_2,weather interaction,1,19.919919305492304,6.240425269897303,3.1920772133242967,-29.727134394484892,model_3 better,True
+Oreobates berdemenos,O. berdemenos,3,H3,model_4_ord − model_3,heterospecific calling,1,0.8293065181331887,2.3018524351548946,0.36027788118284987,8.277274021539597,indistinguishable,False
+Oreobates berdemenos,O. berdemenos,4,H0,model_1 − model_0,weather,2,50.47921322258695,8.970328429750403,5.62735396121851,-92.87730525601637,model_1 better,True
+Oreobates berdemenos,O. berdemenos,4,H1,model_2 − model_1,non-linear weather,2,13.50590860919204,5.204641895878738,2.594973656090846,-14.146816860277795,model_2 better,True
+Oreobates berdemenos,O. berdemenos,4,H2,model_3 − model_2,weather interaction,1,19.903741936303664,6.215248103198754,3.2024050537998567,-30.915713574096117,model_3 better,True
+Oreobates berdemenos,O. berdemenos,4,H3,model_4_ord − model_3,heterospecific calling,1,0.03910026731106164,1.9682508971359898,0.01986548938855133,9.076987128118162,indistinguishable,False
+Oreobates berdemenos,O. berdemenos,5,H0,model_1 − model_0,weather,2,50.22563018938136,8.970559258006363,5.598940795642614,-93.91034563423364,model_1 better,True
+Oreobates berdemenos,O. berdemenos,5,H1,model_2 − model_1,non-linear weather,2,12.162720008071815,5.141056374274519,2.3658017190655998,-13.380584889872807,model_2 better,True
+Oreobates berdemenos,O. berdemenos,5,H2,model_3 − model_2,weather interaction,1,18.625026686106143,6.171961245347709,3.0176836739124515,-31.550788089983143,model_3 better,True
+Oreobates berdemenos,O. berdemenos,5,H3,model_4_ord − model_3,heterospecific calling,1,0.3371741603185825,1.8708821857420797,0.1802220165909824,8.715015967075487,indistinguishable,False

@@ -1,0 +1,11 @@
+species,statistic,value
+G. chrysosticta,residual lag-1 autocorrelation,0.068
+G. chrysosticta,Ljung-Box p (24 lags),5.837328707391844e-25
+G. chrysosticta,"PPC r(observed, predicted) by hour of day",0.98
+G. chrysosticta,"PPC r(observed, predicted) by week of year",0.96
+G. chrysosticta,% in-season night hours above the temperature optimum,21.4
+O. berdemenos,residual lag-1 autocorrelation,0.075
+O. berdemenos,Ljung-Box p (24 lags),1.8454659580190492e-75
+O. berdemenos,"PPC r(observed, predicted) by hour of day",0.9
+O. berdemenos,"PPC r(observed, predicted) by week of year",0.97
+O. berdemenos,% in-season night hours above the temperature optimum,19.5

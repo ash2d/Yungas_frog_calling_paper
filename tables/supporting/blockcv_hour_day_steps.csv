@@ -1,0 +1,25 @@
+species,species_short,K,hypothesis,adds,richer,simpler,scheme,delta_elpd,se,z,supported
+Gastrotheca chrysosticta,G. chrysosticta,2,H0,+ weather,model_1,model_0,hour_psis,382.68515168052187,24.950486542794202,15.337783133974309,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H0,+ weather,model_1,model_0,day_kfold,381.6394344786673,57.18087646805186,6.674249470308436,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H0,+ weather,model_1,model_0,hour_kfold,383.6547304256203,26.62540582336559,14.40934770988307,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H1,+ non-linear weather,model_2,model_1,hour_psis,105.10793911667763,13.4812986763873,7.796573730747156,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H1,+ non-linear weather,model_2,model_1,day_kfold,109.63834588353927,24.62684693631611,4.451984704621707,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H1,+ non-linear weather,model_2,model_1,hour_kfold,107.52129846578983,14.5132383258308,7.408498093387084,True
+Gastrotheca chrysosticta,G. chrysosticta,2,H2,+ T × RH interaction,model_3,model_2,hour_psis,1.8591228934760107,4.119362011959022,0.4513133072739771,False
+Gastrotheca chrysosticta,G. chrysosticta,2,H2,+ T × RH interaction,model_3,model_2,day_kfold,2.194854922165393,4.237704662837692,0.5179348484128795,False
+Gastrotheca chrysosticta,G. chrysosticta,2,H2,+ T × RH interaction,model_3,model_2,hour_kfold,-0.8230185265555083,2.8239190174649615,-0.2914455129433329,False
+Gastrotheca chrysosticta,G. chrysosticta,2,H3,+ heterospecific calling,model_4_ord,model_3,hour_psis,-0.7405167371152999,0.7763388089008633,-0.9538576825287401,False
+Gastrotheca chrysosticta,G. chrysosticta,2,H3,+ heterospecific calling,model_4_ord,model_3,day_kfold,-4.6545961089197725,3.566484968919637,-1.3050934321839431,False
+Gastrotheca chrysosticta,G. chrysosticta,2,H3,+ heterospecific calling,model_4_ord,model_3,hour_kfold,0.03754008955276911,1.4744278022024957,0.025460785191849907,False
+Oreobates berdemenos,O. berdemenos,2,H0,+ weather,model_1,model_0,hour_psis,64.69762676387921,10.347046135926753,6.252762954176626,True
+Oreobates berdemenos,O. berdemenos,2,H0,+ weather,model_1,model_0,day_kfold,43.144047047789414,24.239653616010404,1.779895362006847,False
+Oreobates berdemenos,O. berdemenos,2,H0,+ weather,model_1,model_0,hour_kfold,49.25722773433179,10.036614668392376,4.9077531978441105,True
+Oreobates berdemenos,O. berdemenos,2,H1,+ non-linear weather,model_2,model_1,hour_psis,11.814302936609874,4.805272257873857,2.4586126035316958,True
+Oreobates berdemenos,O. berdemenos,2,H1,+ non-linear weather,model_2,model_1,day_kfold,11.722333439708162,10.64714655572241,1.1009835713595848,False
+Oreobates berdemenos,O. berdemenos,2,H1,+ non-linear weather,model_2,model_1,hour_kfold,13.931650230471906,5.1003339403855446,2.7315172679494757,True
+Oreobates berdemenos,O. berdemenos,2,H2,+ T × RH interaction,model_3,model_2,hour_psis,17.564338065484563,6.059817563505623,2.89849288058823,True
+Oreobates berdemenos,O. berdemenos,2,H2,+ T × RH interaction,model_3,model_2,day_kfold,11.60397261996015,12.711729129882459,0.9128555605139337,False
+Oreobates berdemenos,O. berdemenos,2,H2,+ T × RH interaction,model_3,model_2,hour_kfold,16.27431612457381,7.828458520343966,2.0788659839330355,True
+Oreobates berdemenos,O. berdemenos,2,H3,+ heterospecific calling,model_4_ord,model_3,hour_psis,0.8896599228606608,2.3250884709444013,0.38263486915803246,False
+Oreobates berdemenos,O. berdemenos,2,H3,+ heterospecific calling,model_4_ord,model_3,day_kfold,-3.3502219550415147,1.7975687932078996,-1.8637517338420113,False
+Oreobates berdemenos,O. berdemenos,2,H3,+ heterospecific calling,model_4_ord,model_3,hour_kfold,-0.321433149109659,0.5794121448686111,-0.5547573552890368,False

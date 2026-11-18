@@ -1,0 +1,11 @@
+species,species_short,K,model,n_coef,elpd_loo,loo_se,p_loo,n_pareto_bad,divergences,max_r_hat,min_ess_bulk,source
+Gastrotheca chrysosticta,G. chrysosticta,2,model_0,8,-3027.969086550968,71.75164220078523,9.523640172295744,0.0,0,1.0,2428.0,cache
+Gastrotheca chrysosticta,G. chrysosticta,2,model_1,10,-2645.283934870446,67.98533885856817,11.394650855867043,0.0,0,1.0,2170.0,cache
+Gastrotheca chrysosticta,G. chrysosticta,2,model_2,12,-2540.175995753769,68.07131335594192,13.09646270387205,0.0,0,1.0,2295.0,cache
+Gastrotheca chrysosticta,G. chrysosticta,2,model_3,13,-2538.3168728602923,68.36338403234787,14.398131637728419,0.0,0,1.0,2372.0,cache
+Gastrotheca chrysosticta,G. chrysosticta,2,model_4_ord,14,-2539.057389597408,68.38776321585279,15.530861897904806,0.0,0,1.0,2483.0,cache
+Oreobates berdemenos,O. berdemenos,2,model_0,8,-2319.2474127908436,63.56066674714819,8.299994014084556,0.0,0,1.0,2524.0,cache
+Oreobates berdemenos,O. berdemenos,2,model_1,10,-2254.5497860269647,61.712289566622125,10.038662667067072,0.0,0,1.0,2711.0,cache
+Oreobates berdemenos,O. berdemenos,2,model_2,12,-2242.735483090354,61.37293492675218,11.58008731182933,0.0,0,1.0,2183.0,cache
+Oreobates berdemenos,O. berdemenos,2,model_3,13,-2225.1711450248704,61.0680089589264,12.68186592709747,1.0,0,1.0,1727.0,cache
+Oreobates berdemenos,O. berdemenos,2,model_4_ord,14,-2224.2814851020094,61.06509186238808,13.71793127979278,0.0,0,1.0,1494.0,cache

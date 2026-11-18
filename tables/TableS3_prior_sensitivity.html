@@ -1,0 +1,497 @@
+<style>table{border-collapse:collapse;font-family:Georgia,serif;font-size:12px}th,td{padding:3px 8px;text-align:right}th:nth-child(-n+3),td:nth-child(-n+3){text-align:left}thead th{border-top:1.4px solid #000;border-bottom:0.8px solid #000}tbody tr:last-child td{border-bottom:1.4px solid #000}</style>
+<table><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Species</th>
+      <th>Group</th>
+      <th>Term</th>
+      <th>Mean [95% HDI] N(0, 1)</th>
+      <th>P(β&gt;0) N(0, 1)</th>
+      <th>Mean [95% HDI] N(0, 0.5)</th>
+      <th>P(β&gt;0) N(0, 0.5)</th>
+      <th>Δ mean</th>
+      <th>Δ/SD</th>
+      <th>HDI width ratio</th>
+      <th>HDI overlap</th>
+      <th>Inference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Environmental</td>
+      <td>Temperature (z)</td>
+      <td>0.865 [0.678, 1.043]</td>
+      <td>&gt; 0.999</td>
+      <td>0.721 [0.550, 0.889]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.144</td>
+      <td>-1.55</td>
+      <td>0.93</td>
+      <td>0.43</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Environmental</td>
+      <td>Temperature²</td>
+      <td>-0.781 [-0.903, -0.637]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.794 [-0.921, -0.674]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.013</td>
+      <td>-0.20</td>
+      <td>0.93</td>
+      <td>0.81</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Environmental</td>
+      <td>Humidity (z)</td>
+      <td>2.000 [1.786, 2.234]</td>
+      <td>&gt; 0.999</td>
+      <td>1.766 [1.556, 1.967]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.233</td>
+      <td>-2.03</td>
+      <td>0.92</td>
+      <td>0.27</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Environmental</td>
+      <td>Humidity²</td>
+      <td>0.250 [0.120, 0.372]</td>
+      <td>&gt; 0.999</td>
+      <td>0.162 [0.041, 0.288]</td>
+      <td>0.994</td>
+      <td>-0.087</td>
+      <td>-1.35</td>
+      <td>0.98</td>
+      <td>0.51</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Environmental</td>
+      <td>Temperature × Humidity</td>
+      <td>-0.361 [-0.534, -0.159]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.437 [-0.614, -0.257]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.076</td>
+      <td>-0.79</td>
+      <td>0.95</td>
+      <td>0.61</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Heterospecific calling</td>
+      <td>Heterospecific calling (ordinal)</td>
+      <td>-0.058 [-0.211, 0.114]</td>
+      <td>0.241</td>
+      <td>-0.017 [-0.168, 0.132]</td>
+      <td>0.416</td>
+      <td>0.041</td>
+      <td>0.50</td>
+      <td>0.93</td>
+      <td>0.82</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Diel harmonics</td>
+      <td>Diel sin(1)</td>
+      <td>-0.020 [-0.191, 0.157]</td>
+      <td>0.406</td>
+      <td>-0.075 [-0.241, 0.085]</td>
+      <td>0.185</td>
+      <td>-0.054</td>
+      <td>-0.60</td>
+      <td>0.94</td>
+      <td>0.69</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Diel harmonics</td>
+      <td>Diel cos(1)</td>
+      <td>3.853 [3.468, 4.241]</td>
+      <td>&gt; 0.999</td>
+      <td>3.415 [3.080, 3.710]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.438</td>
+      <td>-2.21</td>
+      <td>0.81</td>
+      <td>0.21</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Diel harmonics</td>
+      <td>Diel sin(2)</td>
+      <td>-0.668 [-0.835, -0.505]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.601 [-0.747, -0.445]</td>
+      <td>&lt; 0.001</td>
+      <td>0.067</td>
+      <td>0.79</td>
+      <td>0.91</td>
+      <td>0.62</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Diel harmonics</td>
+      <td>Diel cos(2)</td>
+      <td>-0.994 [-1.199, -0.792]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.809 [-0.989, -0.627]</td>
+      <td>&lt; 0.001</td>
+      <td>0.185</td>
+      <td>1.73</td>
+      <td>0.89</td>
+      <td>0.34</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal sin(1)</td>
+      <td>-3.344 [-3.654, -3.047]</td>
+      <td>&lt; 0.001</td>
+      <td>-3.045 [-3.320, -2.799]</td>
+      <td>&lt; 0.001</td>
+      <td>0.298</td>
+      <td>1.92</td>
+      <td>0.86</td>
+      <td>0.32</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal cos(1)</td>
+      <td>-3.139 [-3.466, -2.822]</td>
+      <td>&lt; 0.001</td>
+      <td>-2.822 [-3.100, -2.535]</td>
+      <td>&lt; 0.001</td>
+      <td>0.317</td>
+      <td>1.90</td>
+      <td>0.88</td>
+      <td>0.30</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal sin(2)</td>
+      <td>1.135 [0.924, 1.358]</td>
+      <td>&gt; 0.999</td>
+      <td>1.145 [0.952, 1.342]</td>
+      <td>&gt; 0.999</td>
+      <td>0.010</td>
+      <td>0.09</td>
+      <td>0.90</td>
+      <td>0.90</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal cos(2)</td>
+      <td>-0.112 [-0.306, 0.086]</td>
+      <td>0.136</td>
+      <td>-0.116 [-0.308, 0.064]</td>
+      <td>0.109</td>
+      <td>-0.005</td>
+      <td>-0.05</td>
+      <td>0.95</td>
+      <td>0.94</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Cut-points</td>
+      <td>τ1 (0 | 1)</td>
+      <td>5.490 [5.145, 5.835]</td>
+      <td>&gt; 0.999</td>
+      <td>4.980 [4.700, 5.277]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.510</td>
+      <td>-2.89</td>
+      <td>0.84</td>
+      <td>0.12</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Cut-points</td>
+      <td>τ2 (1 | 2)</td>
+      <td>6.388 [6.028, 6.752]</td>
+      <td>&gt; 0.999</td>
+      <td>5.851 [5.564, 6.165]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.537</td>
+      <td>-2.91</td>
+      <td>0.83</td>
+      <td>0.12</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>G. chrysosticta</td>
+      <td>Cut-points</td>
+      <td>τ3 (2 | 3)</td>
+      <td>7.889 [7.489, 8.269]</td>
+      <td>&gt; 0.999</td>
+      <td>7.313 [6.962, 7.625]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.576</td>
+      <td>-2.87</td>
+      <td>0.85</td>
+      <td>0.10</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Environmental</td>
+      <td>Temperature (z)</td>
+      <td>1.840 [1.505, 2.199]</td>
+      <td>&gt; 0.999</td>
+      <td>1.509 [1.221, 1.797]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.331</td>
+      <td>-1.86</td>
+      <td>0.83</td>
+      <td>0.30</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Environmental</td>
+      <td>Temperature²</td>
+      <td>-1.102 [-1.381, -0.827]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.871 [-1.112, -0.639]</td>
+      <td>&lt; 0.001</td>
+      <td>0.231</td>
+      <td>1.62</td>
+      <td>0.85</td>
+      <td>0.38</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Environmental</td>
+      <td>Humidity (z)</td>
+      <td>1.724 [1.395, 2.068]</td>
+      <td>&gt; 0.999</td>
+      <td>1.428 [1.115, 1.707]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.296</td>
+      <td>-1.72</td>
+      <td>0.88</td>
+      <td>0.33</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Environmental</td>
+      <td>Humidity²</td>
+      <td>-0.373 [-0.620, -0.129]</td>
+      <td>0.001</td>
+      <td>-0.229 [-0.435, -0.016]</td>
+      <td>0.015</td>
+      <td>0.144</td>
+      <td>1.12</td>
+      <td>0.85</td>
+      <td>0.51</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Environmental</td>
+      <td>Temperature × Humidity</td>
+      <td>-1.299 [-1.740, -0.878]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.905 [-1.236, -0.539]</td>
+      <td>&lt; 0.001</td>
+      <td>0.394</td>
+      <td>1.80</td>
+      <td>0.81</td>
+      <td>0.30</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Heterospecific calling</td>
+      <td>Heterospecific calling (ordinal)</td>
+      <td>-0.196 [-0.358, -0.033]</td>
+      <td>0.009</td>
+      <td>-0.167 [-0.321, -0.011]</td>
+      <td>0.017</td>
+      <td>0.028</td>
+      <td>0.34</td>
+      <td>0.95</td>
+      <td>0.83</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Diel harmonics</td>
+      <td>Diel sin(1)</td>
+      <td>-0.065 [-0.196, 0.083]</td>
+      <td>0.177</td>
+      <td>-0.058 [-0.199, 0.081]</td>
+      <td>0.208</td>
+      <td>0.006</td>
+      <td>0.09</td>
+      <td>1.00</td>
+      <td>0.98</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Diel harmonics</td>
+      <td>Diel cos(1)</td>
+      <td>1.633 [1.459, 1.814]</td>
+      <td>&gt; 0.999</td>
+      <td>1.575 [1.397, 1.744]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.058</td>
+      <td>-0.64</td>
+      <td>0.98</td>
+      <td>0.68</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Diel harmonics</td>
+      <td>Diel sin(2)</td>
+      <td>-0.336 [-0.472, -0.207]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.328 [-0.453, -0.185]</td>
+      <td>&lt; 0.001</td>
+      <td>0.008</td>
+      <td>0.12</td>
+      <td>1.01</td>
+      <td>0.86</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Diel harmonics</td>
+      <td>Diel cos(2)</td>
+      <td>-0.370 [-0.510, -0.226]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.354 [-0.490, -0.221]</td>
+      <td>&lt; 0.001</td>
+      <td>0.016</td>
+      <td>0.22</td>
+      <td>0.94</td>
+      <td>0.92</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal sin(1)</td>
+      <td>-1.944 [-2.346, -1.526]</td>
+      <td>&lt; 0.001</td>
+      <td>-1.838 [-2.211, -1.495]</td>
+      <td>&lt; 0.001</td>
+      <td>0.106</td>
+      <td>0.50</td>
+      <td>0.87</td>
+      <td>0.81</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal cos(1)</td>
+      <td>1.308 [0.589, 2.042]</td>
+      <td>&gt; 0.999</td>
+      <td>1.129 [0.591, 1.665]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.180</td>
+      <td>-0.48</td>
+      <td>0.74</td>
+      <td>0.74</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal sin(2)</td>
+      <td>-1.610 [-1.928, -1.270]</td>
+      <td>&lt; 0.001</td>
+      <td>-1.668 [-1.962, -1.386]</td>
+      <td>&lt; 0.001</td>
+      <td>-0.058</td>
+      <td>-0.35</td>
+      <td>0.88</td>
+      <td>0.78</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Seasonal harmonics</td>
+      <td>Seasonal cos(2)</td>
+      <td>-0.863 [-1.273, -0.469]</td>
+      <td>0.001</td>
+      <td>-0.762 [-1.117, -0.469]</td>
+      <td>&lt; 0.001</td>
+      <td>0.101</td>
+      <td>0.49</td>
+      <td>0.81</td>
+      <td>0.81</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Cut-points</td>
+      <td>τ1 (0 | 1)</td>
+      <td>5.822 [5.437, 6.237]</td>
+      <td>&gt; 0.999</td>
+      <td>5.580 [5.220, 5.930]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.242</td>
+      <td>-1.17</td>
+      <td>0.89</td>
+      <td>0.49</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Cut-points</td>
+      <td>τ2 (1 | 2)</td>
+      <td>6.549 [6.148, 6.972]</td>
+      <td>&gt; 0.999</td>
+      <td>6.299 [5.956, 6.695]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.250</td>
+      <td>-1.17</td>
+      <td>0.90</td>
+      <td>0.54</td>
+      <td>unchanged</td>
+    </tr>
+    <tr>
+      <td>O. berdemenos</td>
+      <td>Cut-points</td>
+      <td>τ3 (2 | 3)</td>
+      <td>8.459 [7.995, 8.925]</td>
+      <td>&gt; 0.999</td>
+      <td>8.198 [7.801, 8.642]</td>
+      <td>&gt; 0.999</td>
+      <td>-0.261</td>
+      <td>-1.11</td>
+      <td>0.90</td>
+      <td>0.58</td>
+      <td>unchanged</td>
+    </tr>
+  </tbody>
+</table></table><p style='font-family:Georgia,serif;font-size:11px;max-width:900px'><i>Note.</i> Cumulative-logit ordinal model (model_4_ord) refitted with the coefficient prior changed from N(0, 1) to N(0, 0.5); data, formula, cut-point priors and sampler settings identical (4 chains × 1000 draws after 1000 tuning steps, seed 42). Coefficients are on the logit scale; the continuous predictors are z-scored, so each is the change in log-odds of a higher calling category per 1 SD. HDI = highest-density interval. Δ = posterior mean under the tighter prior minus that under the reference prior; Δ/SD expresses that shift in reference posterior SDs (below 0.1 in absolute value = negligible relative to posterior uncertainty). An HDI width ratio below 1 means the tighter prior narrows the interval; HDI overlap is the intersection divided by the union of the two intervals. Inference counts as unchanged when the sign of the posterior mean and the exclusion or inclusion of zero by the 95% HDI both agree across priors.</p>

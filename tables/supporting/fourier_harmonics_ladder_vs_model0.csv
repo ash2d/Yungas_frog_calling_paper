@@ -1,0 +1,33 @@
+species,species_short,K,model,rung,elpd_diff,se_diff,diff_over_se,delta_bic,verdict
+Gastrotheca chrysosticta,G. chrysosticta,2,model_1,+ weather,382.68515168052187,24.950486542794206,15.337783133974307,-753.356922975353,model_1 better
+Gastrotheca chrysosticta,G. chrysosticta,2,model_2,+ non-linear weather,487.7930907971994,28.251286016869816,17.266226058025158,-953.4819841595972,model_2 better
+Gastrotheca chrysosticta,G. chrysosticta,2,model_3,+ weather interaction,489.65221369067547,28.521752526854566,17.167676257959428,-950.1944800363663,model_3 better
+Gastrotheca chrysosticta,G. chrysosticta,2,model_4_ord,+ heterospecific calling,488.9116969535602,28.557436121989458,17.120293812969233,-942.5898973381863,model_4_ord better
+Gastrotheca chrysosticta,G. chrysosticta,3,model_1,+ weather,386.3735113741533,24.887648816756656,15.524709233039767,-770.7730230230436,model_1 better
+Gastrotheca chrysosticta,G. chrysosticta,3,model_2,+ non-linear weather,494.9957543431903,28.164360380017236,17.575252825354145,-980.5939368731688,model_2 better
+Gastrotheca chrysosticta,G. chrysosticta,3,model_3,+ weather interaction,500.51335782884854,28.50039520948741,17.56162867742389,-986.1236435015471,model_3 better
+Gastrotheca chrysosticta,G. chrysosticta,3,model_4_ord,+ heterospecific calling,500.4206380811226,28.538205239111427,17.535112453228113,-981.0006325266149,model_4_ord better
+Gastrotheca chrysosticta,G. chrysosticta,4,model_1,+ weather,395.9039897754276,24.842586592955964,15.936504368980842,-783.7459683219431,model_1 better
+Gastrotheca chrysosticta,G. chrysosticta,4,model_2,+ non-linear weather,509.10855274240697,28.223344138762485,18.038562341844795,-1002.816412332455,model_2 better
+Gastrotheca chrysosticta,G. chrysosticta,4,model_3,+ weather interaction,518.8505568412945,28.788821629799664,18.022639603429475,-1013.4845770521524,model_3 better
+Gastrotheca chrysosticta,G. chrysosticta,4,model_4_ord,+ heterospecific calling,521.6947738721083,28.88474815695327,18.061254023657586,-1012.0791582607635,model_4_ord better
+Gastrotheca chrysosticta,G. chrysosticta,5,model_1,+ weather,386.25086684271434,24.682056906536314,15.649055032379705,-758.8385534348236,model_1 better
+Gastrotheca chrysosticta,G. chrysosticta,5,model_2,+ non-linear weather,503.1995728362291,28.24228670418098,17.81723902554022,-981.1605018242108,model_2 better
+Gastrotheca chrysosticta,G. chrysosticta,5,model_3,+ weather interaction,512.6244290428303,28.809101445456953,17.793836090770146,-991.7164383135241,model_3 better
+Gastrotheca chrysosticta,G. chrysosticta,5,model_4_ord,+ heterospecific calling,515.3708205307918,28.885638882699993,17.841766374759136,-990.9452408562875,model_4_ord better
+Oreobates berdemenos,O. berdemenos,2,model_1,+ weather,64.69762676387921,10.347046135926753,6.252762954176626,-84.73879875791681,model_1 better
+Oreobates berdemenos,O. berdemenos,2,model_2,+ non-linear weather,76.51192970048909,11.912497627081045,6.422828536523876,-97.74812753855713,model_2 better
+Oreobates berdemenos,O. berdemenos,2,model_3,+ weather interaction,94.07626776597365,12.863387112325963,7.313491146964537,-126.16633015105344,model_3 better
+Oreobates berdemenos,O. berdemenos,2,model_4_ord,+ heterospecific calling,94.96592768883431,13.24303398956219,7.171009888193594,-117.04864370195173,model_4_ord better
+Oreobates berdemenos,O. berdemenos,3,model_1,+ weather,56.351866158774065,9.652502170191724,5.83805785952543,-83.87285764212993,model_1 better
+Oreobates berdemenos,O. berdemenos,3,model_2,+ non-linear weather,69.73794231928835,11.524535570984279,6.051258368699037,-95.89540562623188,model_2 better
+Oreobates berdemenos,O. berdemenos,3,model_3,+ weather interaction,89.65786162478065,12.682090153058093,7.069643926412321,-125.62254002071677,model_3 better
+Oreobates berdemenos,O. berdemenos,3,model_4_ord,+ heterospecific calling,90.48716814291384,13.078103702711694,6.918982308127109,-117.34526599917717,model_4_ord better
+Oreobates berdemenos,O. berdemenos,4,model_1,+ weather,50.47921322258695,8.970328429750403,5.62735396121851,-92.87730525601637,model_1 better
+Oreobates berdemenos,O. berdemenos,4,model_2,+ non-linear weather,63.98512183177898,10.936256943666526,5.850733222652971,-107.02412211629417,model_2 better
+Oreobates berdemenos,O. berdemenos,4,model_3,+ weather interaction,83.88886376808264,12.275052247250535,6.834094232623144,-137.93983569039028,model_3 better
+Oreobates berdemenos,O. berdemenos,4,model_4_ord,+ heterospecific calling,83.9279640353937,12.50534584330423,6.711366889571588,-128.86284856227212,model_4_ord better
+Oreobates berdemenos,O. berdemenos,5,model_1,+ weather,50.22563018938136,8.970559258006363,5.598940795642614,-93.91034563423364,model_1 better
+Oreobates berdemenos,O. berdemenos,5,model_2,+ non-linear weather,62.38835019745317,10.919560235015767,5.713448971817781,-107.29093052410644,model_2 better
+Oreobates berdemenos,O. berdemenos,5,model_3,+ weather interaction,81.01337688355932,12.09458835189523,6.698316182945116,-138.8417186140896,model_3 better
+Oreobates berdemenos,O. berdemenos,5,model_4_ord,+ heterospecific calling,81.35055104387789,12.315968331812542,6.605290696773456,-130.1267026470141,model_4_ord better

@@ -1,0 +1,11 @@
+,G. chrysosticta,O. berdemenos
+H0 Δ/SE range,15.3 … 15.9,5.6 … 6.3
+H0 supported at,"K=2, K=3, K=4, K=5","K=2, K=3, K=4, K=5"
+H1 Δ/SE range,7.8 … 8.4,2.4 … 2.6
+H1 supported at,"K=2, K=3, K=4, K=5","K=2, K=3, K=4, K=5"
+H2 Δ/SE range,0.5 … 1.6,2.9 … 3.2
+H2 supported at,no K,"K=2, K=3, K=4, K=5"
+H3 Δ/SE range,-1.0 … 1.2,0.0 … 0.4
+H3 supported at,no K,no K
+best rung × K by elpd,model_4_ord at K=5,model_4_ord at K=5
+best rung × K by BIC,model_3 at K=4,model_3 at K=2

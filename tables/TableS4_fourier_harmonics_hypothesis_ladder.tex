@@ -1,0 +1,44 @@
+\begin{table}[htbp]
+\centering
+\caption{Nested hypothesis tests of the ordinal calling model, repeated at each Fourier harmonic count.}
+\label{tab:hypothesis-ladder}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l l rrrr@{}}
+\toprule
+Hypothesis (models compared) & Statistic & $K=2$ & $K=3$ & $K=4$ & $K=5$ \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{Gastrotheca chrysosticta}}\\
+\hspace{0.2em}H0: weather & $\Delta$elpd $\pm$ SE & {\boldmath$+382.7 \pm 25.0$} & {\boldmath$+386.4 \pm 24.9$} & {\boldmath$+395.9 \pm 24.8$} & {\boldmath$+386.3 \pm 24.7$} \\
+\hspace{1.2em}\textit{model 1 vs.\ model 0} & $\Delta$/SE & {\boldmath$+15.3$} & {\boldmath$+15.5$} & {\boldmath$+15.9$} & {\boldmath$+15.6$} \\
+\addlinespace[2pt]
+\hspace{0.2em}H1: non-linear weather & $\Delta$elpd $\pm$ SE & {\boldmath$+105.1 \pm 13.5$} & {\boldmath$+108.6 \pm 13.8$} & {\boldmath$+113.2 \pm 13.8$} & {\boldmath$+116.9 \pm 14.0$} \\
+\hspace{1.2em}\textit{model 2 vs.\ model 1} & $\Delta$/SE & {\boldmath$+7.8$} & {\boldmath$+7.9$} & {\boldmath$+8.2$} & {\boldmath$+8.4$} \\
+\addlinespace[2pt]
+\hspace{0.2em}H2: weather interaction & $\Delta$elpd $\pm$ SE & $+1.9 \pm 4.1$ & $+5.5 \pm 5.0$ & $+9.7 \pm 6.1$ & $+9.4 \pm 6.3$ \\
+\hspace{1.2em}\textit{model 3 vs.\ model 2} & $\Delta$/SE & $+0.5$ & $+1.1$ & $+1.6$ & $+1.5$ \\
+\addlinespace[2pt]
+\hspace{0.2em}H3: heterospecific calling & $\Delta$elpd $\pm$ SE & $-0.7 \pm 0.8$ & $-0.1 \pm 1.1$ & $+2.8 \pm 2.4$ & $+2.7 \pm 2.6$ \\
+\hspace{1.2em}\textit{model 4 vs.\ model 3} & $\Delta$/SE & $-1.0$ & $-0.1$ & $+1.2$ & $+1.0$ \\
+\addlinespace[2pt]
+\addlinespace[4pt]
+\multicolumn{6}{@{}l}{\textit{Oreobates berdemenos}}\\
+\hspace{0.2em}H0: weather & $\Delta$elpd $\pm$ SE & {\boldmath$+64.7 \pm 10.3$} & {\boldmath$+56.4 \pm 9.7$} & {\boldmath$+50.5 \pm 9.0$} & {\boldmath$+50.2 \pm 9.0$} \\
+\hspace{1.2em}\textit{model 1 vs.\ model 0} & $\Delta$/SE & {\boldmath$+6.3$} & {\boldmath$+5.8$} & {\boldmath$+5.6$} & {\boldmath$+5.6$} \\
+\addlinespace[2pt]
+\hspace{0.2em}H1: non-linear weather & $\Delta$elpd $\pm$ SE & {\boldmath$+11.8 \pm 4.8$} & {\boldmath$+13.4 \pm 5.2$} & {\boldmath$+13.5 \pm 5.2$} & {\boldmath$+12.2 \pm 5.1$} \\
+\hspace{1.2em}\textit{model 2 vs.\ model 1} & $\Delta$/SE & {\boldmath$+2.5$} & {\boldmath$+2.6$} & {\boldmath$+2.6$} & {\boldmath$+2.4$} \\
+\addlinespace[2pt]
+\hspace{0.2em}H2: weather interaction & $\Delta$elpd $\pm$ SE & {\boldmath$+17.6 \pm 6.1$} & {\boldmath$+19.9 \pm 6.2$} & {\boldmath$+19.9 \pm 6.2$} & {\boldmath$+18.6 \pm 6.2$} \\
+\hspace{1.2em}\textit{model 3 vs.\ model 2} & $\Delta$/SE & {\boldmath$+2.9$} & {\boldmath$+3.2$} & {\boldmath$+3.2$} & {\boldmath$+3.0$} \\
+\addlinespace[2pt]
+\hspace{0.2em}H3: heterospecific calling & $\Delta$elpd $\pm$ SE & $+0.9 \pm 2.3$ & $+0.8 \pm 2.3$ & $+0.0 \pm 2.0$ & $+0.3 \pm 1.9$ \\
+\hspace{1.2em}\textit{model 4 vs.\ model 3} & $\Delta$/SE & $+0.4$ & $+0.4$ & $+0.0$ & $+0.2$ \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}\footnotesize\raggedright
+\textit{Note.} Each pair of rows reports one pre-specified step up the nested model ladder\, tested against the rung immediately below it. Model~0 contains the Fourier harmonics only; H0 adds temperature and humidity (model~1 vs.\ model~0)\, H1 adds their quadratic terms (model~2 vs.\ model~1)\, H2 adds the temperature $\times$ humidity interaction (model~3 vs.\ model~2)\, and H3 adds the ordinal heterospecific-calling term (model~4 vs.\ model~3; \texttt{model\_4\_ord} in the analysis code). $\Delta$elpd is the difference in expected log pointwise predictive density estimated by PSIS-LOO\, $\mathrm{elpd}_{\mathrm{LOO}}$(richer)~$-$~$\mathrm{elpd}_{\mathrm{LOO}}$(simpler)\, so positive values favour the richer model. Both models of a pair are fitted to the same $n=11\,302$ observations, so the difference is taken observation by observation and $\mathrm{SE}(\Delta)=\sqrt{n}\times\mathrm{sd}(\mathrm{elpd}_i^{\mathrm{richer}}-\mathrm{elpd}_i^{\mathrm{simpler}})$ is the standard error of that \emph{paired} difference, which is considerably smaller than the standard errors of the two elpd totals themselves. $\Delta$/SE is their ratio; following the decision rule used throughout, a step is taken to improve predictive performance only when it exceeds 2 (shown in \textbf{bold}). Columns are the number of Fourier harmonics $K$ fitted to each of the diel (24\,h) and seasonal (366\,d) cycles; data, priors, cut-points and sampler settings (4 chains $\times$ 1000 draws after 1000 tuning steps, seed 42) are identical across columns, so differences between columns are attributable to the harmonic basis alone. Because the compared models are nested, the paired standard error is optimistic when the true difference is near zero (Sivula, Magnusson \& Vehtari, 2020), so steps close to the threshold should be read conservatively.
+\end{minipage}
+\end{table}

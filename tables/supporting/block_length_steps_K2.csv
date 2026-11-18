@@ -1,0 +1,41 @@
+species,species_short,hypothesis,adds,richer,simpler,scheme,holdout,n_clusters,delta_elpd,se,z,supported
+Gastrotheca chrysosticta,G. chrysosticta,H0,+ weather,model_1,model_0,hour_psis,1 h (PSIS-LOO),11302,382.68515168052187,24.950486542794202,15.337783133974309,True
+Gastrotheca chrysosticta,G. chrysosticta,H0,+ weather,model_1,model_0,block6h_kfold,6 h blocks,1884,379.5648807432067,44.908127850100975,8.452030821907291,True
+Gastrotheca chrysosticta,G. chrysosticta,H0,+ weather,model_1,model_0,block12h_kfold,12 h blocks (00–12 h),942,389.16555454718565,47.938329509587625,8.118045800268298,True
+Gastrotheca chrysosticta,G. chrysosticta,H0,+ weather,model_1,model_0,block12h_off6_kfold,12 h blocks (06–18 h),943,380.45629366016743,55.82788964543781,6.814807009121075,True
+Gastrotheca chrysosticta,G. chrysosticta,H0,+ weather,model_1,model_0,day_kfold,24 h (day) blocks,471,381.6394344786673,57.18087646805186,6.674249470308436,True
+Gastrotheca chrysosticta,G. chrysosticta,H1,+ non-linear weather,model_2,model_1,hour_psis,1 h (PSIS-LOO),11302,105.10793911667763,13.4812986763873,7.796573730747156,True
+Gastrotheca chrysosticta,G. chrysosticta,H1,+ non-linear weather,model_2,model_1,block6h_kfold,6 h blocks,1884,109.70472908110204,21.44727958324205,5.11508831016594,True
+Gastrotheca chrysosticta,G. chrysosticta,H1,+ non-linear weather,model_2,model_1,block12h_kfold,12 h blocks (00–12 h),942,109.33459688918776,21.95116076990344,4.980811631569528,True
+Gastrotheca chrysosticta,G. chrysosticta,H1,+ non-linear weather,model_2,model_1,block12h_off6_kfold,12 h blocks (06–18 h),943,109.80219892510829,24.359267997131692,4.507614881450358,True
+Gastrotheca chrysosticta,G. chrysosticta,H1,+ non-linear weather,model_2,model_1,day_kfold,24 h (day) blocks,471,109.63834588353927,24.62684693631611,4.451984704621707,True
+Gastrotheca chrysosticta,G. chrysosticta,H2,+ T × RH interaction,model_3,model_2,hour_psis,1 h (PSIS-LOO),11302,1.8591228934760107,4.119362011959022,0.4513133072739771,False
+Gastrotheca chrysosticta,G. chrysosticta,H2,+ T × RH interaction,model_3,model_2,block6h_kfold,6 h blocks,1884,1.3874336517464534,3.6943377627549085,0.37555679551937576,False
+Gastrotheca chrysosticta,G. chrysosticta,H2,+ T × RH interaction,model_3,model_2,block12h_kfold,12 h blocks (00–12 h),942,1.9500778022755938,3.786267519238312,0.5150396247404867,False
+Gastrotheca chrysosticta,G. chrysosticta,H2,+ T × RH interaction,model_3,model_2,block12h_off6_kfold,12 h blocks (06–18 h),943,1.7544532976969958,4.176815440994527,0.42004568372292006,False
+Gastrotheca chrysosticta,G. chrysosticta,H2,+ T × RH interaction,model_3,model_2,day_kfold,24 h (day) blocks,471,2.194854922165393,4.237704662837692,0.5179348484128795,False
+Gastrotheca chrysosticta,G. chrysosticta,H3,+ heterospecific calling,model_4_ord,model_3,hour_psis,1 h (PSIS-LOO),11302,-0.7405167371152999,0.7763388089008633,-0.9538576825287401,False
+Gastrotheca chrysosticta,G. chrysosticta,H3,+ heterospecific calling,model_4_ord,model_3,block6h_kfold,6 h blocks,1884,-0.47803106283339547,2.2771129266603394,-0.20992857105883003,False
+Gastrotheca chrysosticta,G. chrysosticta,H3,+ heterospecific calling,model_4_ord,model_3,block12h_kfold,12 h blocks (00–12 h),942,-0.23425851997968383,2.3154053716041947,-0.10117386909981177,False
+Gastrotheca chrysosticta,G. chrysosticta,H3,+ heterospecific calling,model_4_ord,model_3,block12h_off6_kfold,12 h blocks (06–18 h),943,-3.650079822513261,4.173753893609771,-0.8745316364009192,False
+Gastrotheca chrysosticta,G. chrysosticta,H3,+ heterospecific calling,model_4_ord,model_3,day_kfold,24 h (day) blocks,471,-4.6545961089197725,3.566484968919637,-1.3050934321839431,False
+Oreobates berdemenos,O. berdemenos,H0,+ weather,model_1,model_0,hour_psis,1 h (PSIS-LOO),11302,64.69762676387921,10.347046135926753,6.252762954176626,True
+Oreobates berdemenos,O. berdemenos,H0,+ weather,model_1,model_0,block6h_kfold,6 h blocks,1884,48.380437326594325,17.44378114077273,2.773506325042734,True
+Oreobates berdemenos,O. berdemenos,H0,+ weather,model_1,model_0,block12h_kfold,12 h blocks (00–12 h),942,46.63796342294615,19.504763184312356,2.39110636628785,True
+Oreobates berdemenos,O. berdemenos,H0,+ weather,model_1,model_0,block12h_off6_kfold,12 h blocks (06–18 h),943,42.923608667972424,22.279596448998355,1.926588247064151,False
+Oreobates berdemenos,O. berdemenos,H0,+ weather,model_1,model_0,day_kfold,24 h (day) blocks,471,43.144047047789414,24.239653616010404,1.779895362006847,False
+Oreobates berdemenos,O. berdemenos,H1,+ non-linear weather,model_2,model_1,hour_psis,1 h (PSIS-LOO),11302,11.814302936609874,4.805272257873857,2.4586126035316958,True
+Oreobates berdemenos,O. berdemenos,H1,+ non-linear weather,model_2,model_1,block6h_kfold,6 h blocks,1884,14.395287276490839,8.645400703011992,1.6650804018228593,False
+Oreobates berdemenos,O. berdemenos,H1,+ non-linear weather,model_2,model_1,block12h_kfold,12 h blocks (00–12 h),942,14.666824619724277,9.323012012200833,1.57318521101658,False
+Oreobates berdemenos,O. berdemenos,H1,+ non-linear weather,model_2,model_1,block12h_off6_kfold,12 h blocks (06–18 h),943,11.6451897998267,10.93644313192796,1.064805957416778,False
+Oreobates berdemenos,O. berdemenos,H1,+ non-linear weather,model_2,model_1,day_kfold,24 h (day) blocks,471,11.722333439708162,10.64714655572241,1.1009835713595848,False
+Oreobates berdemenos,O. berdemenos,H2,+ T × RH interaction,model_3,model_2,hour_psis,1 h (PSIS-LOO),11302,17.564338065484563,6.059817563505623,2.89849288058823,True
+Oreobates berdemenos,O. berdemenos,H2,+ T × RH interaction,model_3,model_2,block6h_kfold,6 h blocks,1884,16.75897747599125,9.677709065264132,1.7317091641185693,False
+Oreobates berdemenos,O. berdemenos,H2,+ T × RH interaction,model_3,model_2,block12h_kfold,12 h blocks (00–12 h),942,17.68381848194761,10.044178494568232,1.7606037658043217,False
+Oreobates berdemenos,O. berdemenos,H2,+ T × RH interaction,model_3,model_2,block12h_off6_kfold,12 h blocks (06–18 h),943,8.929028308022628,11.717312234315395,0.7620372427964341,False
+Oreobates berdemenos,O. berdemenos,H2,+ T × RH interaction,model_3,model_2,day_kfold,24 h (day) blocks,471,11.60397261996015,12.711729129882459,0.9128555605139337,False
+Oreobates berdemenos,O. berdemenos,H3,+ heterospecific calling,model_4_ord,model_3,hour_psis,1 h (PSIS-LOO),11302,0.8896599228606608,2.3250884709444013,0.38263486915803246,False
+Oreobates berdemenos,O. berdemenos,H3,+ heterospecific calling,model_4_ord,model_3,block6h_kfold,6 h blocks,1884,-3.302123423449858,1.2820164342614493,-2.575726281818035,False
+Oreobates berdemenos,O. berdemenos,H3,+ heterospecific calling,model_4_ord,model_3,block12h_kfold,12 h blocks (00–12 h),942,-2.1383749674753467,0.9771681140321081,-2.1883388710379914,False
+Oreobates berdemenos,O. berdemenos,H3,+ heterospecific calling,model_4_ord,model_3,block12h_off6_kfold,12 h blocks (06–18 h),943,-4.1477265068274605,2.2084993565527,-1.8780745824176952,False
+Oreobates berdemenos,O. berdemenos,H3,+ heterospecific calling,model_4_ord,model_3,day_kfold,24 h (day) blocks,471,-3.3502219550415147,1.7975687932078996,-1.8637517338420113,False

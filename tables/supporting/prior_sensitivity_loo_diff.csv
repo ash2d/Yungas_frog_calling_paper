@@ -1,0 +1,3 @@
+species,species_short,comparison,elpd_diff,se_diff,elpd_diff_over_se
+Gastrotheca chrysosticta,G. chrysosticta,"N(0, 0.5) - N(0, 1)",-18.692508578943208,3.459927864939922,-5.402571761208606
+Oreobates berdemenos,O. berdemenos,"N(0, 0.5) - N(0, 1)",-8.701397221314384,2.1956605649190903,-3.962997450671538

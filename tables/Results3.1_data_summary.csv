@@ -1,0 +1,19 @@
+quantity,analysed hours,all annotated hours
+Hours,11302,13257
+First hour,2018-09-02 01:00:00,2018-09-02 00:00:00
+Last hour,2019-12-16 23:00:00,2020-07-18 23:00:00
+Last hour with relative humidity,,2019-12-16 23:00:00
+G. chrysosticta: % hours with no calling (index 0),91.0,91.3
+G. chrysosticta: % hours with a full chorus (index 3),2.2,2.0
+O. berdemenos: % hours with no calling (index 0),93.2,94.1
+O. berdemenos: % hours with a full chorus (index 3),0.8,0.7
+% hours with both species calling,0.88,0.75
+Temperature (°C) min,0.2,0.2
+Temperature (°C) max,37.3,37.3
+Temperature (°C) mean,16.0,15.5
+Temperature (°C) SD,4.9,5.0
+Relative humidity (%) min,15.0,15.0
+Relative humidity (%) max,100.0,100.0
+Relative humidity (%) mean,89.4,89.4
+Relative humidity (%) SD,15.9,15.9
+"Pearson r, temperature vs relative humidity",-0.38,

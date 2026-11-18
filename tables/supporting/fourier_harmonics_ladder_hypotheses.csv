@@ -1,0 +1,9 @@
+hypothesis,adds,species,Δ/SE at K=2,Δ/SE at K=3,Δ/SE at K=4,Δ/SE at K=5,supported at,verdict stable across K
+H0,weather,G. chrysosticta,15.34,15.52,15.94,15.65,"K=2, K=3, K=4, K=5",True
+H1,non-linear weather,G. chrysosticta,7.8,7.89,8.19,8.37,"K=2, K=3, K=4, K=5",True
+H2,weather interaction,G. chrysosticta,0.45,1.11,1.6,1.51,no K,True
+H3,heterospecific calling,G. chrysosticta,-0.95,-0.08,1.21,1.04,no K,True
+H0,weather,O. berdemenos,6.25,5.84,5.63,5.6,"K=2, K=3, K=4, K=5",True
+H1,non-linear weather,O. berdemenos,2.46,2.59,2.59,2.37,"K=2, K=3, K=4, K=5",True
+H2,weather interaction,O. berdemenos,2.9,3.19,3.2,3.02,"K=2, K=3, K=4, K=5",True
+H3,heterospecific calling,O. berdemenos,0.38,0.36,0.02,0.18,no K,True

@@ -1,0 +1,13 @@
+species,scope,n_obs,kl_divergence
+Gastrotheca chrysosticta,marginal,11302,0.00013320520218810042
+Gastrotheca chrysosticta,other_calling_bin=0,10533,0.00027220055655367565
+Gastrotheca chrysosticta,other_calling_bin=1,769,0.006109921509042982
+Gastrotheca chrysosticta,temp_tertile_1,3819,0.0002657760062092845
+Gastrotheca chrysosticta,temp_tertile_2,3801,0.0013955722437022453
+Gastrotheca chrysosticta,temp_tertile_3,3819,0.00014923332251577017
+Oreobates berdemenos,marginal,11302,5.132343799582682e-05
+Oreobates berdemenos,other_calling_bin=0,10287,0.00013311325274012876
+Oreobates berdemenos,other_calling_bin=1,1015,0.0019380255317675964
+Oreobates berdemenos,temp_tertile_1,3819,0.000724112638032767
+Oreobates berdemenos,temp_tertile_2,3801,0.000448031443013168
+Oreobates berdemenos,temp_tertile_3,3819,0.0002958980139794987

@@ -1,0 +1,13 @@
+species,species_short,K_a,K_b,comparison,d_coef,elpd_diff,se_diff,diff_over_se,verdict
+Gastrotheca chrysosticta,G. chrysosticta,3,2,K=3 − K=2,4,24.685514517151315,7.6282072309758275,3.236083363979803,K=3 better
+Gastrotheca chrysosticta,G. chrysosticta,4,2,K=4 − K=2,8,54.38509170537135,9.577019166583026,5.678707618664539,K=4 better
+Gastrotheca chrysosticta,G. chrysosticta,5,2,K=5 − K=2,12,58.42564209662304,11.174464245629245,5.228496043510588,K=5 better
+Gastrotheca chrysosticta,G. chrysosticta,4,3,K=4 − K=3,4,29.699577188220044,6.3756070783749,4.658313604198813,K=4 better
+Gastrotheca chrysosticta,G. chrysosticta,5,3,K=5 − K=3,8,33.740127579471725,8.17792090193065,4.125758610786555,K=5 better
+Gastrotheca chrysosticta,G. chrysosticta,5,4,K=5 − K=4,4,4.040550391251685,3.634727108620665,1.1116516510052457,indistinguishable
+Oreobates berdemenos,O. berdemenos,3,2,K=3 − K=2,4,35.13798624265158,6.289995883946129,5.586328972381967,K=3 better
+Oreobates berdemenos,O. berdemenos,4,2,K=4 − K=2,8,68.64936844347179,9.259698044340512,7.413780461818622,K=4 better
+Oreobates berdemenos,O. berdemenos,5,2,K=5 − K=2,12,94.06710179122214,12.02238082196391,7.824332233709417,K=5 better
+Oreobates berdemenos,O. berdemenos,4,3,K=4 − K=3,4,33.511382200820194,5.877787585535811,5.701359859156146,K=4 better
+Oreobates berdemenos,O. berdemenos,5,3,K=5 − K=3,8,58.92911554857055,9.61570602789514,6.128423162856407,K=5 better
+Oreobates berdemenos,O. berdemenos,5,4,K=5 − K=4,4,25.417733347750357,6.490443345568877,3.9161782939070604,K=5 better

@@ -1,0 +1,10 @@
+,G. chrysosticta,O. berdemenos
+β₁ (temp) mean,0.865,1.84
+β₁ 95% HDI,"[0.678, 1.043]","[1.505, 2.199]"
+β₂ (temp²) mean,-0.781,-1.102
+β₂ 95% HDI,"[-0.903, -0.637]","[-1.381, -0.827]"
+% draws concave,100.0,100.0
+Optimum @ med. RH (°C),18.3,19.8
+Med. RH 95% HDI,"[17.5, 19.3]","[19.1, 20.5]"
+Optimum marginal (°C),18.3,19.8
+Marginal 95% HDI,"[17.5, 19.3]","[19.1, 20.5]"
