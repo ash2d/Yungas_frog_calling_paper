@@ -20,7 +20,7 @@ frogcall.py                             shared paths, data preparation and cache
 fit_all_models.py                       optional: fit all 46 Bayesian models in parallel
 data/df_helechos_with2020.csv           hourly calling indices, temperature and relative humidity
 data/audio/                             the ten recordings used for the spectrograms (Fig. S5)
-figures/                                every figure, as produced by the notebooks (PDF + PNG)
+figures/                                every figure, as produced by the notebooks (PDF)
 tables/                                 every table (CSV; LaTeX where the notebooks write it)
 tables/supporting/                      further tables written along the way
 pyproject.toml, uv.lock                 pinned Python environment

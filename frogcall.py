@@ -216,8 +216,7 @@ def paired_diff(elpd_a: np.ndarray, elpd_b: np.ndarray):
 
 
 # ── Figures ──────────────────────────────────────────────────────────────────
-def save_figure(fig, name: str, formats=("pdf", "png")) -> None:
-    """Save a figure into figures/ in every requested format."""
-    for fmt in formats:
-        fig.savefig(FIG_DIR / f"{name}.{fmt}", bbox_inches="tight")
-    print(f"  saved figures/{name}.{{{','.join(formats)}}}")
+def save_figure(fig, name: str) -> None:
+    """Save a figure into figures/ as PDF."""
+    fig.savefig(FIG_DIR / f"{name}.pdf", bbox_inches="tight")
+    print(f"  saved figures/{name}.pdf")
