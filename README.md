@@ -69,7 +69,7 @@ Main versions: PyMC 6.0.1, Bambi 0.18.0, ArviZ 1.1.0, statsmodels 0.14.5, NumPy 
 
 ## Running
 
-Open the notebooks in Jupyter (`uv run jupyter lab`) and run them in order:
+Open the notebooks in Jupyter (`uv run jupyter lab`) or with your IDE and run them in order:
 
 ```bash
 uv run jupyter nbconvert --to notebook --execute --inplace 01_main_analysis.ipynb
@@ -88,8 +88,7 @@ uv run python fit_all_models.py --jobs 4
 ```
 
 then run the notebooks as above (about 15 min in total once the cache exists). Delete `outputs/` to
-refit everything. The cache file names include a hash of the model formula, prior and sampler settings,
-so a changed model is never confused with a cached one.
+refit everything.
 
 Chains are seeded individually from `random_seed = 42`, so the draws do not depend on the number of
 cores used. Set the environment variable `FROGCALL_CORES` to change how many chains run in parallel.
@@ -115,8 +114,7 @@ cores used. Set the environment variable `FROGCALL_CORES` to change how many cha
 | Fig. S4 (coefficients by harmonic count) | 02 | `figures/FigS4_coefficients_by_harmonics` |
 | Fig. S5 (call spectrograms) | 01 §0.1 | `figures/FigS5_call_spectrogram_*`, `figures/FigS5_candidate_*` |
 
-Table S5 (literature review) is not computed. Figures whose names start with `extra_` are drawn by the
-notebooks but are not in the paper.
+Table S5 (literature review) is not computed. Every figure in `figures/` is in the paper.
 
 ## Notes on reproduction
 
@@ -133,10 +131,12 @@ and confirm the fresh fits give the same results. So far:
 
 - The four fresh fits finished before the full run was stopped (*G. chrysosticta* `model_0`–`model_3`,
   K = 2) gave elpd_LOO −3028.2, −2645.4, −2540.5, −2538.5. Table 1 gives −3028, −2645, −2540, −2538.
-- Fresh draws are **not** bit-identical to the original fits: posterior means differ at the level of
-  Monte Carlo error (e.g. `temp_z` 1.3729 vs 1.3737 in `model_1`). The original fits were made with
-  earlier package versions. Expect small Monte Carlo differences (about ±0.1 in ELPD, about ±0.005
-  in coefficients) from what is printed in the paper.
+- The one fresh fit compared draw by draw (*G. chrysosticta* `model_1`, K = 2) was **not**
+  bit-identical to the original fit; posterior means agreed only to Monte Carlo error (`temp_z`
+  1.3729 vs 1.3737). The cause is not yet known. The original fits were made with the same PyMC
+  (6.0.1), Bambi (0.18.0), PyTensor, NumPy and SciPy versions as this environment, and refitting
+  with the original notebook gives identical draws every time. The only differences in the sampling
+  call are `progressbar=False` and extra (unused) columns in the data frame.
 - In this environment the draws are deterministic: the same seed gives identical draws with 1 or more cores.
 
 ### Checked against the manuscript (from the original fits)
@@ -161,7 +161,7 @@ and `reports/manuscript_checks.py`). The analysis code is unchanged except for t
   `frogcall.fit_cached`, which samples with the original settings and caches the result.
 - **Table cells.** New cells produce Table 1, Table 2, Table S1, Table S2, the Table S4 CSV and the
   text statistics.
-- **ArviZ 1.x.** `az.summary` is called with `round_to="none"`, because ArviZ 1.x otherwise returns
-  rounded strings.
-- **Removed.** Sections that produce nothing in the paper: ALE plots, Bayes factors, the
-  leave-one-day-out figure, the prior checker, K = 1 and K = 6 fits, and frequentist AIC/BIC plots.
+- **Removed.** Sections that produce nothing in the paper: ALE plots, Bayes factors, the prior checker, K = 1 and K = 6 fits, frequentist AIC/BIC plots and the AIC/BIC scan over K,
+  and every figure or table not in the paper (prior-sensitivity plots, the 2 × 2 PPC composite, the
+  temperature-optimum density, the ladder and block-length plots, the ΔELPD autocorrelation plot, the
+  frequentist coefficient table and the alternative Fourier-ladder table).
