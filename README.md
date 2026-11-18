@@ -43,10 +43,9 @@ The notebooks in this repository were executed top to bottom; their saved output
 | `Gastrotheca chrysosticta`, `Oreobates berdemenos` | calling index: 0 none, 1 one male, 2 several distinguishable males, 3 full chorus |
 
 Models use the 11,302 hours that have both temperature and humidity. The annotations and microclimate
-data are also archived at <http://hdl.handle.net/11336/301442>.
+data are archived at <http://hdl.handle.net/11336/301442>.
 
-`data/audio/` holds ten 60-s recordings from the 2018 deployment (8 kHz, 16-bit stereo WAV): the five
-candidate calls per species shown in the spectrogram section, including the two used for Fig. S5.
+`data/audio/` holds ten 60-s recordings from the 2018 deployment including the two used for Fig. S5.
 
 ## Installation
 
@@ -77,7 +76,7 @@ uv run jupyter nbconvert --to notebook --execute --inplace 02_fourier_harmonics_
 uv run jupyter nbconvert --to notebook --execute --inplace 03_blocked_cross_validation.ipynb
 ```
 
-**Run time.** The paper rests on 46 Bayesian model fits (4 chains × 1,000 draws after 1,000 tuning
+**Run time.** The paper fits 46 Bayesian models (main analysis and sensitivities) (4 chains × 1,000 draws after 1,000 tuning
 steps, `target_accept = 0.9`, `random_seed = 42`), each taking about 2–6 min. Every fit is cached in
 `outputs/` the first time it runs and loaded afterwards, and the cache is shared by the three notebooks
 (`frogcall.fit_cached`). Run sequentially from the notebooks, a first run takes a few hours. To fill
@@ -114,54 +113,4 @@ cores used. Set the environment variable `FROGCALL_CORES` to change how many cha
 | Fig. S4 (coefficients by harmonic count) | 02 | `figures/FigS4_coefficients_by_harmonics` |
 | Fig. S5 (call spectrograms) | 01 §0.1 | `figures/FigS5_call_spectrogram_*`, `figures/FigS5_candidate_*` |
 
-Table S5 (literature review) is not computed. Every figure in `figures/` is in the paper.
-
-## Notes on reproduction
-
-### TODO: confirm that fresh fits match the original fits
-
-The saved outputs in this repository were produced from the **original project's model fits**:
-the posterior draws and pointwise PSIS-LOO values of all 46 models were copied into `outputs/` and
-loaded by the notebooks; no model was re-sampled for this run. For the two N(0, 0.5) fits, PSIS-LOO
-was recomputed from the saved posteriors and matched the original values (−2557.75 and −2232.98).
-All tables listed below match the manuscript.
-
-Still to do: run the notebooks from an empty `outputs/` folder (or `python fit_all_models.py` first)
-and confirm the fresh fits give the same results. So far:
-
-- The four fresh fits finished before the full run was stopped (*G. chrysosticta* `model_0`–`model_3`,
-  K = 2) gave elpd_LOO −3028.2, −2645.4, −2540.5, −2538.5. Table 1 gives −3028, −2645, −2540, −2538.
-- The one fresh fit compared draw by draw (*G. chrysosticta* `model_1`, K = 2) was **not**
-  bit-identical to the original fit; posterior means agreed only to Monte Carlo error (`temp_z`
-  1.3729 vs 1.3737). The cause is not yet known. The original fits were made with the same PyMC
-  (6.0.1), Bambi (0.18.0), PyTensor, NumPy and SciPy versions as this environment, and refitting
-  with the original notebook gives identical draws every time. The only differences in the sampling
-  call are `progressbar=False` and extra (unused) columns in the data frame.
-- In this environment the draws are deterministic: the same seed gives identical draws with 1 or more cores.
-
-### Checked against the manuscript (from the original fits)
-
-| Item | Status |
-|---|---|
-| Table 1, Table 2, Table S3 (incl. ΔELPD −18.7 ± 3.5 / −8.7 ± 2.2), Table S4 | identical to the manuscript |
-| Table S2 (1 h, 6 h, 12 h) | identical; the manuscript's 12 h column is the blocks starting at midnight (`12 h blocks`); all 300 refits converged |
-| Table S1 | identical (R̂, bulk and tail ESS) |
-| Temperature optima 18.3 °C [17.5, 19.3] and 19.8 °C [19.1, 20.5] | identical |
-| Fig. S2 KL values and stratum sizes (769, 1,015, 3,819) | identical |
-| Residual lag-1 r = 0.068 / 0.075; diel / seasonal PPC r = 0.90–0.98 | identical |
-| Figs 1, 2, S1–S5 | regenerated |
-
-### What differs from the original notebooks
-
-The notebooks are assembled from the project's original notebooks (`Bayes_GLM_cum_ord_logit_hypoth`,
-`fourier_harmonics_sensitivity`, `fourier_harmonics_hour_vs_day_loo`, `blockcv_residual_diagnostics`,
-and `reports/manuscript_checks.py`). The analysis code is unchanged except for the following:
-
-- **Paths and caching.** Paths are relative to the repository. All Bayesian fitting goes through
-  `frogcall.fit_cached`, which samples with the original settings and caches the result.
-- **Table cells.** New cells produce Table 1, Table 2, Table S1, Table S2, the Table S4 CSV and the
-  text statistics.
-- **Removed.** Sections that produce nothing in the paper: ALE plots, Bayes factors, the prior checker, K = 1 and K = 6 fits, frequentist AIC/BIC plots and the AIC/BIC scan over K,
-  and every figure or table not in the paper (prior-sensitivity plots, the 2 × 2 PPC composite, the
-  temperature-optimum density, the ladder and block-length plots, the ΔELPD autocorrelation plot, the
-  frequentist coefficient table and the alternative Fourier-ladder table).
+Table S5 (literature review) is not computed here. Every figure in `figures/` is in the paper.
