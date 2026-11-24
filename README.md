@@ -19,16 +19,16 @@ calling and cyclic (Fourier) time-of-day and day-of-year terms.
 frogcall.py                             shared paths, data preparation and cached model fitting
 fit_all_models.py                       optional: fit all 46 Bayesian models in parallel
 data/df_helechos_with2020.csv           hourly calling indices, temperature and relative humidity
-data/audio/                             the ten recordings used for the spectrograms (Fig. S5)
-figures/                                every figure, as produced by the notebooks (PDF)
-tables/                                 every table (CSV; LaTeX where the notebooks write it)
-tables/supporting/                      further tables written along the way
+data/audio/                             one call clip per species (Fig. S5)
+figures/                                every figure, produced by the notebooks (PDF)
+tables/                                 every table (CSV)
+tables/supporting/                      tables not in the paper
 pyproject.toml, uv.lock                 pinned Python environment
-requirements.txt                        the same pins, for pip
+requirements.txt                        for pip install environment
 ```
 
 The notebooks in this repository were executed top to bottom; their saved outputs, `figures/` and
-`tables/` are exactly what that run produced.
+`tables/` are what that run produced.
 
 ## Data
 
@@ -45,7 +45,9 @@ The notebooks in this repository were executed top to bottom; their saved output
 Models use the 11,302 hours that have both temperature and humidity. The annotations and microclimate
 data are archived at <http://hdl.handle.net/11336/301442>.
 
-`data/audio/` holds ten 60-s recordings from the 2018 deployment including the two used for Fig. S5.
+`data/audio/` holds the two clips used for Fig. S5, one isolated call per species (44.1 kHz, mono,
+16-bit WAV, about 2 s each). Each file name gives the species, the recording date and start time, the
+channel and the call's position in the original recording, e.g. `gastrotheca_20191013_200000_ch1_49.49s.wav`.
 
 ## Installation
 
@@ -111,6 +113,6 @@ cores used. Set the environment variable `FROGCALL_CORES` to change how many cha
 | Table S3 (prior sensitivity) | 01 §5.5 | `tables/TableS3_prior_sensitivity.{csv,tex,md,html}` |
 | Table S4 (Fourier harmonics) | 02 | `tables/TableS4_fourier_harmonics_hypothesis_ladder.{csv,tex}` |
 | Fig. S4 (coefficients by harmonic count) | 02 | `figures/FigS4_coefficients_by_harmonics` |
-| Fig. S5 (call spectrograms) | 01 §0.1 | `figures/FigS5_call_spectrogram_*`, `figures/FigS5_candidate_*` |
+| Fig. S5 (call spectrograms) | 01 §0.1 | `figures/FigS5_call_spectrogram_*` |
 
 Table S5 (literature review) is not computed here. Every figure in `figures/` is in the paper.
